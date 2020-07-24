@@ -1,0 +1,14 @@
+node_modules/
+build/
+video/
+.vscode/
+.DS_Store
+Thumbs.db
+.idea
+*.sublime*
+*.log
+*.psd
+*.ai
+*.pdf
+*.php
+css/*.css

@@ -1,0 +1,120 @@
+.page-footer {
+  background-color: #fff;
+  @media #{$max-mobile-width} {
+    border-top: 1px solid #e8e8e8;
+  }
+}
+.page-footer__wrapper {
+  @include paddings;
+  @include section-width;
+  @media #{$max-mobile-width} {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+  @media #{$min-tablet-width} {
+    padding-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 28px;
+  }
+  @media #{$min-desktop-width} {
+    padding-bottom: 40px;
+  }
+}
+.page-footer__logo-link {
+  @media #{$max-mobile-width} {
+    display: block;
+    width: 80px;
+    height: 54px;
+    @include centers;
+  }
+  @media #{$min-tablet-width} {
+    width: 60px;
+    height: 41px;
+    flex-shrink: 0;
+    transform: translateY(-15px);
+  }
+  @media #{$min-desktop-width} {
+    width: 100px;
+    height: 68px;
+    transform: translateY(-25px);
+  }
+}
+.page-footer__nav-list {
+  @media #{$max-mobile-width} {
+    display: none;
+  }
+  @media #{$min-tablet-width} {
+    margin-left: 30px;
+    padding-left: 0;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 390px;
+    justify-content: space-between;
+  }
+  @media #{$min-desktop-width} {
+    width: 560px;
+    margin-left: 50px;
+  }
+}
+.page-footer__nav-link {
+  font-weight: 300;
+  @media #{$min-tablet-width} {
+    font-size: 1.3rem;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 1.6rem;
+  }
+}
+.page-footer__contacts-field {
+  @media #{$max-mobile-width} {
+    text-align: center;
+    margin-top: 10px;
+  }
+  @media #{$min-tablet-width} {
+    margin-left: auto;
+    text-align: right;
+  }
+}
+.page-footer__contacts-link {
+  font-weight: 500;
+  @media #{$max-mobile-width} {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+}
+.page-footer__confid-field {
+  @media #{$max-mobile-width} {
+    max-width: 175px;
+    text-align: center;
+    @include centers;
+    margin-top: 11px;
+  }
+  @media #{$min-tablet-width} {
+    width: 100%;
+  }
+}
+.page-footer__confid-link {
+  font-weight: 300;
+  color: #b8b8b8;
+  text-decoration: underline;
+  @media #{$max-mobile-width} {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 1.2rem;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 1.5rem;
+  }
+}

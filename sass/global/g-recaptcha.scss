@@ -1,0 +1,48 @@
+$max-mobile-width: "(max-width: 767px)";
+$max-mobile-wrapper: 500px;
+
+$min-tablet-width: "(min-width: 768px)";
+$max-tablet-width: "(max-width: 1365px)";
+$max-tablet-wrapper: 991px;
+
+$max-phone-header-disable: "(max-width: 900px)";
+
+$min-desktop-width: "(min-width: 1366px)";
+$max-desktop-wrapper: 1400px;
+
+.g-recaptcha--order {
+  @media #{$max-mobile-width} {
+    transform: translateX(-30px) scale(0.70);
+  }
+  @media #{$min-tablet-width} {
+    transform: translateX(-35px) scale(0.65);
+  }
+  @media #{$min-desktop-width} {
+    margin-top: 10px;
+    transform: translateX(-15px) scale(0.8);
+  }
+}
+.g-recaptcha--tough {
+  @media #{$max-mobile-width} {
+    transform: translateX(-30px) scale(0.70);
+  }
+  @media #{$min-tablet-width} {
+    transform: translateX(-37px) scale(0.55);
+  }
+  @media #{$min-desktop-width} {
+    margin-top: 10px;
+    transform: translateX(-27px) scale(0.75);
+  }
+}
+.g-recaptcha--popup-callback {
+  @media #{$max-mobile-width} {
+    transform: translateX(-30px) scale(0.70);
+  }
+  @media #{$min-tablet-width} {
+    transform: translateX(-24px) scale(0.75);
+  }
+  @media #{$min-desktop-width} {
+    margin-top: 10px;
+    transform: translateX(-18px) scale(0.85);
+  }
+}

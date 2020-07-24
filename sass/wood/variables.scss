@@ -1,0 +1,31 @@
+$max-mobile-width: "(max-width: 767px)";
+$max-mobile-wrapper: 500px;
+
+$min-tablet-width: "(min-width: 768px)";
+$max-tablet-width: "(max-width: 1365px)";
+$max-tablet-wrapper: 991px;
+
+$max-phone-header-disable: "(max-width: 900px)";
+
+$min-desktop-width: "(min-width: 1366px)";
+$max-desktop-wrapper: 1400px;
+
+$font-main: "rubik", "Arial", sans-serif;
+
+$padding--mobile: 10px;
+$padding--tablet: 25px;
+$padding--desktop: 50px;
+
+$text-main-color: #333333;
+$text-alt-color: #fff;
+
+$main-bg: #ffffff;
+
+$header-bg: rgba(255, 255, 255, 0.7);
+
+$wood-color: #6b3b00;
+
+$links-color: #333333;
+$links-color--hover: #6b442f;
+
+$animate: all 0.1s ease;

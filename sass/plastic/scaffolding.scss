@@ -1,0 +1,117 @@
+html {
+  font-size: 0.625rem;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+ul {
+  list-style-type: none;
+  box-sizing: border-box;
+}
+li {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: $links-color;
+  font-family: $font-main;
+  transition: $animate;
+}
+strong {
+  font-weight: 700;
+}
+div,
+article,
+section,
+header,
+footer {
+  box-sizing: border-box;
+}
+.visually-hidden{
+  position: absolute;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+body {
+  font-family: $font-main;
+  font-weight: 300;
+  margin: 0px;
+  color: $text-main-color;
+  background-color: $main-bg;
+  transition: $animate;
+}
+main {
+  overflow: hidden;
+  @media #{$min-tablet-width} {
+    margin-top: -6rem;
+    background-repeat: no-repeat;
+    background-position: 50% 1000px;
+    background-size: 110% auto;
+    background-image: url("/img/plastic/main__bg--tablet.jpg");
+  }
+  @media #{$min-desktop-width} {
+    margin-top: -8.6rem;
+    background-repeat: no-repeat;
+    background-position: 50% 1300px;
+    background-size: 110% auto;
+    background-image: url("/img/plastic/main__bg--desktop.jpg");
+  }
+}
+input,
+textarea,
+select {
+  font-family: $font-main;
+  box-sizing: border-box;
+  @media #{$max-mobile-width} {
+    border-radius: 4px;
+  }
+  @media #{$min-tablet-width} {
+    border-radius: 4px;
+  }
+  @media #{$min-desktop-width} {
+    border-radius: 4px;
+  }
+}
+input[type="submit"] {
+  cursor: pointer;
+  border: 0 solid transparent;
+}
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+input:focus {
+  outline-width: 0;
+  outline: none;
+}
+button {
+  font-family: $font-main;
+  border-width: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+button:focus {
+  outline-width: 0;
+  outline: none;
+}
+label {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.clearfix::after { 
+  content: ""; /* Генерируем пустой элемент */
+  clear: both; /* Отменяем обтекание*/
+  display: block; /* Блочный элемент */
+}
+.disable {
+  display: none !important;
+}

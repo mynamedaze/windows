@@ -1,0 +1,155 @@
+.objects {
+  background-repeat: no-repeat;
+  @media #{$max-mobile-width} {
+    background-position: center 17px;
+    background-size: 320px 55px;
+    background-image: url("/img/aluminium/objects__bt-text--mobile.png");
+  }
+  @media #{$min-tablet-width} {
+    background-position: center 31px;
+    background-size: 747px 122px;
+    background-image: url("/img/aluminium/objects__bt-text--tablet.png");
+  }
+  @media #{$min-desktop-width} {
+    background-position: 20% 77px;
+    background-size: 1162px 180px;
+    background-image: url("/img/aluminium/objects__bt-text--desktop.png");
+  }
+}
+.objects__wrapper {
+  @include section-width;
+  @include paddings;
+  @media #{$max-mobile-width} {
+    padding-top: 37px;
+  }
+  @media #{$min-tablet-width} {
+    padding-top: 46px;
+  }
+  @media #{$min-desktop-width} {
+    padding-top: 102px;
+  }
+}
+.objects__title {
+  @include main-title;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.objects__list {
+  padding-left: 0;
+  position: relative;
+  @media #{$max-mobile-width} {
+    margin-top: 17px;
+  }
+  @media #{$min-tablet-width} {
+    margin-top: 27px;
+  }
+  @media #{$min-desktop-width} {
+    margin-top: 44px;
+  }
+}
+.objects__list .owl-nav {
+  @media #{$min-tablet-width} {
+    position: absolute;
+    top: -65px;
+    right: 0;
+  }
+  @media #{$min-desktop-width} {
+    top: -85px;
+  }
+}
+.objects__list .owl-prev {
+  @media #{$min-tablet-width} {
+    font-size: 0;
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url("/img/aluminium/objects__slider-btn--left.png");
+  }
+}
+.objects__list .owl-next {
+  @media #{$min-tablet-width} {
+    font-size: 0;
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url("/img/aluminium/objects__slider-btn--right.png");
+  }
+}
+.objects__item {
+  cursor: pointer;
+  @media #{$max-mobile-width} {
+    width: 217px;
+  }
+  @media #{$min-tablet-width} {
+    width: 217px;
+  }
+  @media #{$min-desktop-width} {
+    width: 259px;
+  }
+}
+.objects__img-field {
+  overflow: hidden;
+  border-top-left-radius: 56px;
+  border-bottom-right-radius: 18px;
+}
+.objects__description {
+  display: block;
+  font-weight: 500;
+  color: #303030;
+  @media #{$max-mobile-width} {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+  }
+}
+.objects__address {
+  font-weight: 300;
+  display: block;
+  color: #303030;
+  position: relative;
+  @media #{$max-mobile-width} {
+    font-size: 1.4rem;
+    padding-left: 11px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 1.4rem;
+    padding-left: 11px;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 1.6rem;
+    padding-left: 14px;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url("/img/aluminium/place_icon.svg");
+    top: 2px;
+    @media #{$max-mobile-width} {
+      width: 8px;
+      height: 11px;
+    }
+    @media #{$min-tablet-width} {
+      width: 8px;
+      height: 11px;
+    }
+    @media #{$min-desktop-width} {
+      width: 9px;
+      height: 13px;
+    }
+  }
+}

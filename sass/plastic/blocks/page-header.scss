@@ -1,0 +1,116 @@
+.page-header {
+  @media #{$min-tablet-width} {
+    position: relative;
+    z-index: 2;
+  }
+}
+.page-header__wrapper {
+  @include section-width;
+  @include paddings;
+  @media #{$max-mobile-width} {
+    padding-top: 17px;
+    padding-bottom: 20px;
+  }
+  @media #{$min-tablet-width} {
+    height: 6rem;
+  }
+  @media #{$min-desktop-width} {
+    height: 8.6rem;
+  }
+}
+.page-header__wrapper {
+  @media #{$min-tablet-width} {
+    display: flex;
+    align-items: center;
+  }
+}
+.page-header__logo-link {
+  @media #{$max-mobile-width} {
+    display: block;
+    width: 80px;
+    height: 54px;
+    @include centers;
+  }
+  @media #{$min-tablet-width} {
+    width: 60px;
+    height: 41px;
+    flex-shrink: 0;
+  }
+  @media #{$min-desktop-width} {
+    width: 100px;
+    height: 68px;
+  }
+}
+.page-header__phone-link {
+  @media #{$max-mobile-width} {
+    font-weight: 500;
+    display: block;
+    width: 16rem;
+    @include centers;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  @media #{$min-tablet-width} {
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-right: 20px;
+    @media #{$max-phone-header-disable} {
+      display: none;
+    }
+  }
+  @media #{$min-desktop-width} {
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin-right: 20px;
+  }
+  &:hover {
+    color: #ff8043;
+  }
+}
+.page-header__callback-btn-mobile {
+  @media #{$max-mobile-width} {
+    display: block;
+    @include centers;
+    background-color: transparent;
+    margin-top: 14px;
+  }
+  @media #{$min-tablet-width} {
+    display: none;
+  }
+}
+.page-header__callback-btn-text-mobile {
+  @media #{$max-mobile-width} {
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #f0b83a;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+.page-header__callback-btn {
+  @media #{$max-mobile-width} {
+    display: none;
+  }
+  @media #{$min-tablet-width} {
+    @include main-btn;
+    width: 170px;
+    min-height: 3.6rem;
+    margin-right: 0;
+    margin-left: auto;
+    border-radius: 6rem;
+  }
+  @media #{$min-desktop-width} {
+    width: 250px;
+    min-height: 5.6rem;
+    border-radius: 6rem;
+  }
+}
+.page-header__callback-btn-text {
+  @media #{$min-tablet-width} {
+    font-size: 1.4rem;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 1.7rem;
+  }
+}

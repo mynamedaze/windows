@@ -1,0 +1,211 @@
+.allwin__wrapper {
+  @include section-width;
+  @include paddings;
+  position: relative;
+  @media #{$max-mobile-width} {
+    max-width: $max-mobile-wrapper;
+    padding-top: 17px;
+    padding-bottom: 29px;
+  }
+  @media #{$min-tablet-width} {
+    padding-top: 14px;
+    padding-bottom: 32px;
+  }
+  @media #{$min-desktop-width} {
+    padding-top: 14px;
+    padding-bottom: 64px;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 0;
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: auto 100%;
+    height: 1px;
+    @media #{$max-mobile-width} {
+      width: 300px;
+      transform: translateX(-150px);
+      background-image: url("/img/main/allwin__dash--mobile.png");
+    }
+    @media #{$min-tablet-width} {
+      width: 630px;
+      transform: translateX(-315px);
+      background-image: url("/img/main/allwin__dash--tablet.png");
+    }
+    @media #{$min-desktop-width} {
+      width: 1000px;
+      transform: translateX(-500px);
+    }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    @media #{$min-tablet-width} {
+      top: -30px;
+      width: 71px;
+      height: 65px;
+      background-image: url("/img/main/kask--tablet.png");
+    }
+    @media #{$min-desktop-width} {
+      width: 136px;
+      height: 125px;
+      background-image: url("/img/main/kask--desktop.png");
+    }
+  }
+}
+.allwin__title {
+  @include main-title;
+  text-align: center;
+  color: #316f77 !important;
+}
+.allwin__list {
+  @media #{$max-mobile-width} {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @media #{$min-tablet-width} {
+    padding-left: 3px;
+    padding-right: 3px;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media #{$min-desktop-width} {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+.allwin__item {
+  @media #{$min-tablet-width} {
+    width: 23%;
+  }
+  @media #{$min-desktop-width} {
+    width: 22%;
+  }
+}
+.allwin__link {
+  display: block;
+  background-position: center;
+  border: 1px solid rgba(59, 59, 59, 0.3);
+  position: relative;
+  font-weight: 500;
+  box-sizing: border-box;
+  text-align: center;
+  @media #{$max-mobile-width} {
+    font-size: 20px;
+    padding-top: 217px;
+    box-shadow: 0 0 0 4px rgba(59, 59, 59, 0.1);
+    max-width: $max-desktop-wrapper;
+    min-height: 260px;
+    margin-top: 28px;
+    border-top-left-radius: 56px;
+    border-bottom-right-radius: 18px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 13px;
+    padding-top: 214px;
+    box-shadow: 0 0 0 3px rgba(59, 59, 59, 0.1);
+    border-top-left-radius: 32px;
+    border-bottom-right-radius: 10px;
+    height: 244px;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 22px;
+    padding-top: 361px;
+    box-shadow: 0 0 0 4px rgba(59, 59, 59, 0.1);
+    border-top-left-radius: 56px;
+    border-bottom-right-radius: 18px;
+    height: 412px;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media #{$max-mobile-width} {
+      left: 16px;
+      right: 16px;
+      top: 16px;
+      height: 180px;
+      border-top-left-radius: 40px;
+      border-bottom-right-radius: 16px;
+    }
+    @media #{$min-tablet-width} {
+      left: 10px;
+      right: 10px;
+      top: 10px;
+      height: 190px;
+      border-top-left-radius: 22px;
+      border-bottom-right-radius: 16px;
+    }
+    @media #{$min-desktop-width} {
+      left: 16px;
+      right: 16px;
+      top: 16px;
+      height: 322px;
+      border-top-left-radius: 44px;
+      border-bottom-right-radius: 14px;
+    }
+  }
+}
+.allwin__link--wood {
+  background-image: url("/img/main/allwin--wood-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #793a1a;
+  &::before {
+    box-shadow: 0 0 8px 0 rgba(35, 6, 0, 0.8);
+    border: 1px solid #f1be9a;
+    background-image: url("/img/main/allwin--wood-bg-content.jpg");
+  }
+  &:hover {
+    box-shadow: 0 0 0 10px rgba(121, 58, 26, 0.4);
+  }
+}
+.allwin__link--aluminium {
+  background-image: url("/img/main/allwin--aluminium-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #5f5f5f;
+  &::before {
+    box-shadow: 0 0 8px 0 rgba(35, 6, 0, 0.4);
+    border: 1px solid #efefef;
+    background-image: url("/img/main/allwin--aluminium-bg-content.jpg");
+  }
+  &:hover {
+    box-shadow: 0 0 0 10px rgba(95, 95, 95, 0.4);
+  }
+}
+.allwin__link--plastic {
+  background-image: url("/img/main/allwin--plastic-bg.jpg");
+  background-size: auto auto;
+  color: #5d5d5d;
+  &::before {
+    box-shadow: 0 0 8px 0 rgba(35, 6, 0, 0.3);
+    border: 1px solid #fff;
+    background-image: url("/img/main/allwin--plastic-bg-content.jpg");
+  }
+  &:hover {
+    box-shadow: 0 0 0 10px rgba(59, 59, 59, 0.1);
+  }
+}
+.allwin__link--fasad {
+  background-image: url("/img/main/allwin--fasad-bg.jpg");
+  background-size: auto auto;
+  color: #335b68;
+  &::before {
+    box-shadow: 0 0 8px 0 rgba(35, 6, 0, 0.2);
+    border: 1px solid #90c9ed;
+    background-image: url("/img/main/allwin--fasad-bg-content.jpg");
+  }
+  &:hover {
+    box-shadow: 0 0 0 10px rgba(51, 91, 104, 0.4);
+  }
+}
